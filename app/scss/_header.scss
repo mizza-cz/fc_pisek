@@ -151,7 +151,7 @@
 
 @media (max-width: 900px) {
   .header {
-    .header__container {
+    .container-fluid {
       padding: 0 10px;
     }
   }
@@ -216,6 +216,7 @@
     font-size: 20px;
     line-height: 28px;
     padding: 12px 0;
+    text-transform: uppercase;
   }
   .nav__list.active {
     &::after {
@@ -288,7 +289,7 @@
     max-width: 100%;
     right: 0;
   }
-  .header .header__container {
+  .header .container-fluid {
     padding: 0;
   }
   .header__logo {
