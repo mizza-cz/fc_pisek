@@ -1,0 +1,182 @@
+.media {
+  margin: 64px 0;
+  .btn {
+    margin: 0 auto;
+  }
+}
+.media__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.fotogallery {
+  max-width: 896px;
+  width: 100%;
+}
+.table {
+  max-width: 416px;
+  width: 100%;
+}
+
+.media__title {
+  font-size: 20px;
+  color: $black;
+  line-height: 28px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 32px;
+  span {
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    padding: 0 42px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 13px;
+    left: 0;
+    background-image: url('../images/svg/menu-decorate-black.svg');
+  }
+}
+
+// fotogallery
+.fotogallery__inner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 896px;
+  margin-bottom: 33px;
+}
+.fotogallery__item {
+  position: relative;
+  max-width: 448px;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  &::before {
+    content: '';
+    display: block;
+    background-image: linear-gradient(to bottom, rgba(2, 13, 56, 0) 21%, rgba(2, 13, 56, 0.95));
+    box-shadow: inset -1px 0 0 0 #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+.bottom__content {
+  position: absolute;
+  bottom: 32px;
+  margin-left: 32px;
+  margin-right: 32px;
+  z-index: 3;
+}
+
+.bottom__title {
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 8px;
+}
+
+// tabulka
+.tabulka {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 32px;
+  tr {
+    border-bottom: 1px solid #dde1e6;
+  }
+  th {
+    color: $gray;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Barlow', sans-serif;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+  }
+  td {
+    color: $black;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    padding: 9px 0;
+  }
+  td.point {
+    font-weight: 600;
+  }
+  .pisek td {
+    font-weight: 600;
+  }
+  .number {
+    width: 46px;
+    padding: 0 16px;
+  }
+  .team {
+    width: 241px;
+    padding-right: 10px;
+  }
+  .zapasy {
+    width: 39px;
+    padding-right: 9px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .media__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .fotogallery {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 920px) {
+  .fotogallery__inner {
+    width: 100%;
+    justify-content: center;
+  }
+  .fotogallery__item {
+    max-width: 600px;
+  }
+}
+@media (max-width: 480px) {
+  .fotogallery__item {
+    height: 260px;
+  }
+  .bottom__title {
+    font-size: 22px;
+  }
+  .bottom__content {
+    bottom: 10px;
+    margin-left: 15px;
+  }
+  .tabulka .number {
+    padding-left: 0;
+    padding-right: 0;
+    width: 25px;
+  }
+  .tabulka .team {
+    width: 220px;
+  }
+}
+@media (max-width: 400px) {
+  .tabulka .zapasy {
+    width: 25px;
+  }
+  .tabulka .team {
+    width: 200px;
+  }
+  .tabulka td {
+    padding-right: 5px;
+  }
+  .tabulka td.point {
+    padding-right: 0;
+  }
+}
