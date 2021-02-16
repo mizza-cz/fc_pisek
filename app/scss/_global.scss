@@ -45,6 +45,7 @@ body {
 .container {
   padding: 0 15px;
   margin: 0 auto;
+  max-width: 1406px;
 }
 
 .container-fluid {
@@ -54,4 +55,15 @@ body {
 }
 
 .btn {
+  width: 136px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include color;
+  font-size: 16px;
+  border-radius: 2px;
+  &:hover {
+    text-decoration: underline;
+  }
 }
