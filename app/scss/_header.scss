@@ -189,6 +189,9 @@
 
   .menu.menu--right {
     top: 288px;
+    .nav.navbar {
+      padding-top: 0;
+    }
   }
   .header__menu-dropdown li:hover {
     color: #fff;
@@ -327,7 +330,7 @@
     left: 0;
   }
   .header__row {
-    padding: 0 15px;
+    width: 100%;
   }
 }
 @media (max-width: 380px) {
