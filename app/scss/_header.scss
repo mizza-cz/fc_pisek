@@ -31,7 +31,8 @@
   padding-left: 9px;
   position: relative;
 }
-.header__logo {
+.header__logo,
+.header__logo-mob {
   width: 182px;
   height: 182px;
   position: absolute;
@@ -45,6 +46,9 @@
     display: block;
     width: 100%;
   }
+}
+.header__logo-mob {
+  display: none;
 }
 .menu {
   max-width: 50%;
@@ -64,6 +68,8 @@
     .catalog-podmenu {
       max-height: 600px;
       transition: all 0.8s;
+      display: block;
+      z-index: 11;
       border-top: 1px solid $yellow;
     }
   }
@@ -120,7 +126,7 @@
 }
 .user-menu {
   max-height: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   border: none;
   position: absolute;
   top: 100px;
@@ -163,6 +169,27 @@
 }
 
 @media (max-width: 830px) {
+  .header__menu-dropdown li:hover a {
+    color: #fff;
+  }
+  .header__row .header__logo {
+    display: none;
+  }
+  .header .container-fluid {
+    display: flex;
+    position: relative;
+  }
+  .header__row {
+    display: none;
+    position: absolute;
+    top: 56px;
+    right: 0;
+    z-index: 5;
+  }
+
+  .menu.menu--right {
+    top: 288px;
+  }
   .header__menu-dropdown li:hover {
     color: #fff;
     background-color: $blue;
@@ -192,8 +219,8 @@
   }
   .menu {
     z-index: 99;
-    display: none;
-    position: absolute;
+    // display: none;
+    // position: absolute;
     background-color: $blue;
     top: 56px;
     right: -15px;
@@ -201,12 +228,16 @@
     width: 100%;
     max-width: 420px;
   }
-  .header__logo {
+  .header__logo,
+  .header__logo-mob {
     width: 86px;
     height: 86px;
     margin-left: 0;
     top: -5px;
-    left: -13px;
+    left: 3px;
+  }
+  .header__logo-mob {
+    display: block !important;
   }
   .nav__link {
     color: #fff;
@@ -215,18 +246,20 @@
     line-height: 28px;
     padding: 12px 0;
     text-transform: uppercase;
+    margin-right: 15px;
   }
+
   .nav__list.active {
     &::after {
       transform: rotate(90deg);
     }
     .catalog-podmenu {
-      display: block;
+      height: 100%;
     }
   }
   .nav__list {
     .catalog-podmenu {
-      display: none;
+      height: 0;
       position: static;
       width: 100%;
       background-color: $blue;
