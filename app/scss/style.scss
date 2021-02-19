@@ -7,36 +7,13 @@
 @import 'clanky';
 @import 'partners';
 @import 'media';
+@import 'aside';
+@import 'a-tym';
 
-.main__inner {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 120px;
-}
-.main__col {
-  padding: 0 56px;
-}
-.main__title {
-  font-size: 48px;
-  line-height: 56px;
-  margin-bottom: 32px;
-}
-.main__subtitle {
-  margin-bottom: 16px;
-  font-size: 32px;
-  line-height: 40px;
-}
+/// default style
 
-.main__content {
-  max-width: 896px;
-  width: 100%;
-}
-.actually {
-  max-width: 416px;
-  width: 100%;
-  padding-top: 41px;
-  margin-left: 30px;
-}
+///////// na controlu
+
 .main__img {
   width: 100%;
   margin-bottom: 33px;
@@ -50,24 +27,6 @@
 }
 
 // article
-
-.main {
-  color: $black;
-}
-
-.main__title-text {
-  font-size: 20px;
-  line-height: 32px;
-  font-family: 'Barlow', sans-serif;
-  font-weight: 600;
-  margin-bottom: 32px;
-}
-.main__text {
-  font-size: 18px;
-  line-height: 32px;
-  @include Barlow;
-  margin-bottom: 32px;
-}
 
 .arcticle__video {
   max-width: 784px;
@@ -144,72 +103,6 @@
   }
 }
 
-// aside
-.actually__item-img {
-  width: 100%;
-  height: 277px;
-  margin-bottom: 23px;
-  img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-  }
-}
-.actually__title {
-  width: 100%;
-  position: relative;
-  font-size: 20px;
-  line-height: 28px;
-  color: $black;
-  text-align: center;
-  margin-bottom: 32px;
-  &::before {
-    content: '';
-    position: absolute;
-    background-image: url('../images/svg/menu-decorate-black.svg');
-    width: 100%;
-    height: 4px;
-    left: 0;
-    top: 13px;
-  }
-  span {
-    background-color: #fff;
-    padding: 0 52px;
-    position: relative;
-  }
-}
-.actually__item.actually__item--main {
-  position: relative;
-  .datum {
-    position: absolute;
-    top: 267px;
-    left: 0;
-    right: 0;
-  }
-  .actually__item-title {
-    font-size: 24px;
-    line-height: 32px;
-    padding: 0 35px;
-  }
-}
-.actually__item {
-  border-bottom: 1px solid #dde1e6;
-  padding-bottom: 15px;
-  margin-bottom: 16px;
-  width: 100%;
-  .datum {
-    margin: 0 auto;
-    margin-bottom: 12px;
-  }
-}
-.actually__item-title {
-  text-align: center;
-  text-transform: uppercase;
-  color: $blue;
-  font-size: 20px;
-  line-height: 28px;
-}
 // zapas-page
 .zapas-page__box {
   border: 1px solid #dde1e6;
@@ -290,25 +183,6 @@
 
 // responsive
 
-@media (max-width: 1240px) {
-  .actually {
-    margin-left: 0;
-  }
-  .main .container {
-    padding: 0;
-  }
-  .main__inner {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .main__content {
-    max-width: 100%;
-  }
-  .main__col {
-    max-width: 896px;
-    margin: 0 auto;
-  }
-}
 @media (max-width: 883px) {
   .main__img {
     height: 440px;
@@ -320,22 +194,6 @@
     }
   }
 }
-@media (max-width: 800px) {
-  .main__title {
-    font-size: 40px;
-    line-height: 50px;
-  }
-  .main__col {
-    padding: 0 30px;
-  }
-}
-@media (max-width: 700px) {
-  .main__title {
-    font-size: 36px;
-    line-height: 40px;
-    text-align: center;
-  }
-}
 
 @media (max-width: 620px) {
   .main__img {
@@ -343,10 +201,6 @@
   }
   .arcticle__video {
     height: 360px;
-  }
-  .main__title {
-    font-size: 32px;
-    line-height: 38px;
   }
 }
 @media (max-width: 480px) {
@@ -359,17 +213,7 @@
   .main__img {
     height: 300px;
   }
-  .actually__item-title,
-  .actually__item.actually__item--main .actually__item-title {
-    padding: 0 15px;
-  }
-  .main__title {
-    font-size: 26px;
-    line-height: 34px;
-  }
-  .main__col {
-    padding: 0 15px;
-  }
+
   .arcticle__video {
     height: 270px;
   }
