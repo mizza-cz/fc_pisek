@@ -75,6 +75,11 @@
 
 //// media 1240px ----------------------------
 @media (max-width: 1240px) {
+  .main-hrac {
+    .main__col {
+      margin-left: 30px;
+    }
+  }
   .main.main-zapasy {
     .container {
       padding: 0 15px;
@@ -201,6 +206,17 @@
 
 //// media 883px ----------------------------
 @media (max-width: 883px) {
+  .main-hrac__feature {
+    font-size: 18px;
+  }
+  .main-hrac__box {
+    padding: 25px 0;
+    width: 82%;
+  }
+  .main-hrac__name {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
   .main__img {
     height: 440px;
   }
@@ -272,6 +288,23 @@
 
 //// media 620px ----------------------------
 @media (max-width: 620px) {
+  .text.main-hrac__link {
+    padding-left: 25px;
+    &::before {
+      left: 0;
+    }
+  }
+  .main-hrac .main__col {
+    margin-left: 0;
+  }
+  .main-hrac__wrapper .main__img {
+    margin-bottom: 200px;
+  }
+  .main-hrac__box {
+    width: 100%;
+    position: relative;
+    transform: translateY(0);
+  }
   .title-page {
     font-size: 32px;
     line-height: 38px;
@@ -285,7 +318,7 @@
 }
 //// media 520px ----------------------------
 @media (max-width: 520px) {
-  .zapas-item__info .zapas__club{
+  .zapas-item__info .zapas__club {
     font-size: 20px;
     line-height: 20px;
   }
@@ -340,6 +373,19 @@
 
 //// media 420px ----------------------------
 @media (max-width: 420px) {
+  .main-hrac__feature {
+    font-size: 15px;
+  }
+  .main-hrac__feature span {
+    width: 63px;
+  }
+  .main-hrac__box {
+    padding: 10px 0 15px;
+  }
+  .main-hrac__name {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
   .main__col {
     padding: 0 15px;
   }

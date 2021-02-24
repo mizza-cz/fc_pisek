@@ -575,6 +575,85 @@
     padding-right: 9px;
   }
 }
+/// hrac detail start ------------------------
+.main-hrac__wrapper {
+  position: relative;
+  img {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .main__img {
+    position: relative;
+    margin-bottom: 130px;
+  }
+  .subtitle {
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+}
+.text.main-hrac__link {
+  margin-bottom: 0;
+  padding-left: 35px;
+  position: relative;
+  display: block;
+  &:hover {
+    text-decoration: underline;
+  }
+  &::before {
+    content: '•';
+    position: absolute;
+    left: 10px;
+    width: 4px;
+    height: 4px;
+  }
+}
+.main-hrac__box {
+  padding: 32px 0;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  text-align: center;
+  background-color: $blue;
+  width: 87%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.main-hrac__name {
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 48px;
+  color: #fff;
+  margin-bottom: 33px;
+}
+.main-hrac__info {
+  display: flex;
+  justify-content: center;
+}
+.main-hrac__feature {
+  max-width: 176px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff;
+  width: 100%;
+
+  span {
+    margin: 0 auto;
+    margin-bottom: 12px;
+    @include color;
+    width: 72px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    font-size: 12px;
+  }
+}
+
+/// hrac detail end -----------------------
 
 /// media section end ------ ------- -------------- -----------
 
@@ -825,7 +904,20 @@
 .aside__menu {
   width: 100%;
   margin-bottom: 32px;
-
+  &-box {
+    display: flex;
+    border-bottom: 1px solid #dde1e6;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    span {
+      font-size: 16px;
+      color: #878d96;
+      @include Barlow;
+      margin-left: 8px;
+      text-decoration: none;
+      line-height: 28px;
+    }
+  }
   &-link {
     display: block;
     padding-left: 28px;
@@ -834,21 +926,9 @@
     line-height: 28px;
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
-    border-bottom: 1px solid #dde1e6;
-    padding-bottom: 8px;
-    margin-bottom: 8px;
-    span {
-      font-size: 16px;
-      color: #878d96;
-      @include Barlow;
-      margin-left: 5px;
-      text-decoration: none;
-    }
+
     &:hover {
       text-decoration: underline;
-      span {
-        text-decoration: none;
-      }
     }
     &::before {
       content: '';
