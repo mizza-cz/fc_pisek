@@ -1066,5 +1066,139 @@
 }
 /// footer end -----------------------------------------------
 
+//archiv-page ----------------------------------
+.archiv-page.main {
+  .main__content {
+    margin-top: 41px;
+  }
+}
+.form {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #dde1e6;
+  margin-bottom: 20px;
+}
+
+.select__box {
+  display: flex;
+  max-width: 550px;
+  justify-content: space-between;
+  .input {
+    width: 100%;
+    border: 2px solid $yellow;
+    border-radius: 4px;
+    padding: 0 15px;
+
+    outline: none;
+    font-size: 18px;
+    line-height: 32px;
+    @include Barlow;
+    color: $black;
+    &:focus {
+      border: 2px solid $yellow;
+    }
+  }
+  .btn {
+    margin-left: 50px;
+    max-width: 136px;
+    width: 100%;
+  }
+}
+.select__redirect {
+  cursor: pointer;
+  display: block;
+  background-color: $yellow;
+  max-width: 250px;
+  width: 100%;
+  color: $blue;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+.select__redirect + .select__redirect {
+  margin-left: 50px;
+}
+.jq-selectbox__select-text {
+  width: 100% !important;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 11px 15px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    right: 15px;
+    width: 10px;
+    height: 15px;
+    background-image: url('../images/svg/arrow-filtr.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 10px;
+  }
+}
+
+.jq-selectbox__dropdown {
+  background-color: #fff;
+  color: $blue;
+  box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+  border-radius: 0 0 4px 4px;
+  text-align: center;
+  width: 100% !important;
+  left: 0;
+  top: 41px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.jq-select-multiple li,
+.jq-selectbox li {
+  font-size: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 15px;
+  text-align: left;
+  @include Barlow;
+  padding: 8px 10px;
+  &:hover {
+    background-color: $yellow;
+    border-radius: 4px;
+  }
+}
+
+.archiv__item {
+  padding: 30px 20px 30px 0;
+  border-bottom: 1px solid #dde1e6;
+  &:hover {
+    .archiv__title {
+      text-decoration: underline;
+    }
+  }
+  &-link {
+    display: flex;
+  }
+  .datum {
+    margin-bottom: 10px;
+  }
+  .text {
+    line-height: 26px;
+  }
+  .archiv__title {
+    margin-bottom: 10px;
+  }
+}
+.archiv__title {
+  text-transform: uppercase;
+  color: #052291;
+  font-size: 20px;
+  line-height: 28px;
+}
+.archiv__img {
+  max-width: 240px;
+  width: 100%;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  margin-right: 20px;
+}
+
+// archiv-page ned
 /// responsive  -----***-----------------
 @import 'media';
