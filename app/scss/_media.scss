@@ -62,7 +62,8 @@
 
 //// media 1241px ----------------------------
 @media (max-width: 1241px) {
-  .archiv-page {
+  .archiv-page,
+  .tabulka-page {
     .main__content {
       max-width: 900px;
       padding: 0 10px;
@@ -182,6 +183,11 @@
 
 //// media 920px ----------------------------
 @media (max-width: 920px) {
+  .tabulka-page {
+    .main__content {
+      padding: 0 20px;
+    }
+  }
   .select__box {
     max-width: 100%;
   }
@@ -300,6 +306,21 @@
 
 //// media 620px ----------------------------
 @media (max-width: 620px) {
+  .tabl__subtitle,
+  .tabl__list {
+    margin-left: 20px;
+  }
+  .tabulka-page {
+    .main__content {
+      padding: 0 15px;
+    }
+  }
+  .table__inner {
+    overflow: auto;
+    .tabl {
+      width: 560px;
+    }
+  }
   .archiv__info {
     padding: 20px;
     .text {

@@ -1200,5 +1200,128 @@
 }
 
 // archiv-page ned
+
+// tabulka pag ---------------------
+
+.tabulka-page {
+  .main__content {
+    margin-top: 41px;
+  }
+}
+.tabl {
+  border-collapse: collapse;
+  width: 100%;
+  tr th:first-child {
+    padding: 8px 0 8px 16px;
+  }
+  tr th.poradi,
+  tr th.tym {
+    text-align: left;
+  }
+  td.tym {
+    padding: 0;
+    padding-left: 40px;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: 5px 8px;
+    white-space: nowrap;
+    text-align: left;
+  }
+  tr th {
+    font-family: 'Barlow', sans-serif;
+    background: #eceff1;
+    font-size: 14px;
+    line-height: 1.57;
+    font-weight: 600;
+    text-align: center;
+    color: #05090c;
+    padding: 0;
+    border-bottom: 1px solid #eceff1;
+  }
+  tr td.body {
+    font-weight: 600;
+  }
+  tr td {
+    border-bottom: 1px solid #eceff1;
+    text-align: center;
+    font-size: 14px;
+    padding: 12px 4px;
+    font-weight: 400;
+    font-family: 'Barlow', sans-serif;
+  }
+  tr td:first-child {
+    padding: 8px 0 8px 16px;
+    text-align: left;
+  }
+  tr.SLA td.tym {
+    background-image: url('../images/table/SLA.png');
+  }
+  tr.SPA td.tym {
+    background-image: url('../images/table/SPA.png');
+  }
+  tr.JAB td.tym {
+    background-image: url('../images/table/JAB.png');
+  }
+  tr.SLO td.tym {
+    background-image: url('../images/table/SLO.png');
+  }
+  tr.LIB td.tym {
+    background-image: url('../images/table/LIB.png');
+  }
+  tr.PLZ td.tym {
+    background-image: url('../images/table/PLZ.png');
+  }
+  tr.OLO td.tym {
+    background-image: url('../images/table/OLO.png');
+  }
+  tr.PCE td.tym {
+    background-image: url('../images/table/PCE.png');
+  }
+  tr.OVA td.tym {
+    background-image: url('../images/table/OVA.png');
+  }
+  tr.CEB td.tym {
+    background-image: url('../images/table/CEB.png');
+  }
+  tr.BOH td.tym {
+    background-image: url('../images/table/BOH.png');
+  }
+  tr.ZLN td.tym {
+    background-image: url('../images/table/ZLN.png');
+  }
+  tr.TEP td.tym {
+    background-image: url('../images/table/TEP.png');
+  }
+  tr.MBL td.tym {
+    background-image: url('../images/table/MBL.png');
+  }
+  tr.BNO td.tym {
+    background-image: url('../images/table/BNO.png');
+  }
+  tr.OPA td.tym {
+    background-image: url('../images/table/OPA.png');
+  }
+  tr.PRI td.tym {
+    background-image: url('../images/table/PRI.png');
+  }
+}
+.tabl__subtitle {
+  margin: 20px 0;
+  font-size: 20px;
+  line-height: 28px;
+  color: #121619;
+  text-transform: uppercase;
+}
+.tabl__list {
+  li {
+    margin-bottom: 5px;
+  }
+  span {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    margin-left: 3px;
+  }
+}
+// tabulka pageend ----------------------
 /// responsive  -----***-----------------
 @import 'media';
