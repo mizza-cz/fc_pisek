@@ -82,6 +82,17 @@
 
 //// media 1240px ----------------------------
 @media (max-width: 1240px) {
+  .main.gallery-page {
+    .aside {
+      margin-left: 30px;
+    }
+    .container {
+      padding: 0 15px;
+    }
+    .main__inner {
+      flex-wrap: nowrap;
+    }
+  }
   .main-hrac {
     .main__col {
       margin-left: 30px;
@@ -154,6 +165,17 @@
 
 //// media 1060px ----------------------------
 @media (max-width: 1060px) {
+  .main.gallery-page {
+    .aside {
+      margin-left: 0;
+    }
+    .container {
+      padding: 0 15px;
+    }
+    .main__inner {
+      flex-wrap: wrap;
+    }
+  }
   .clanky__inner {
     flex-direction: column;
     align-items: center;
@@ -306,6 +328,16 @@
 
 //// media 620px ----------------------------
 @media (max-width: 620px) {
+  .main.gallery-page {
+    .main__content {
+      padding: 0;
+    }
+  }
+  .archive-article {
+    .archiv__item {
+      flex-wrap: wrap;
+    }
+  }
   .tabl__subtitle,
   .tabl__list {
     margin-left: 20px;

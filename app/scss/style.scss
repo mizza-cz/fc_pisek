@@ -1323,5 +1323,33 @@
   }
 }
 // tabulka pageend ----------------------
+//gallerie --------------------------
+.main.gallery-page {
+  .main__content {
+    margin-top: 41px;
+  }
+}
+.archive-article {
+  width: 100%;
+  display: block;
+  .archiv__item {
+    display: flex;
+  }
+}
+
+/// gallerie end ----------------------------
+///statistiky
+.main.statistiky {
+  .main__content {
+    margin-top: 41px;
+  }
+  .form {
+    display: flex;
+    padding-bottom: 10px;
+  }
+  .subtitle {
+    margin-right: 20px;
+  }
+}
 /// responsive  -----***-----------------
 @import 'media';
