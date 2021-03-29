@@ -15,6 +15,12 @@
     margin-left: 25px;
   }
 }
+// media 1400 -----------
+.main-video,
+.tv-page__top {
+  padding-right: 10px;
+}
+
 //// media 1360px ----------------------------
 @media (max-width: 1360px) {
   .media__inner {
@@ -205,6 +211,14 @@
 
 //// media 920px ----------------------------
 @media (max-width: 920px) {
+  .tv-page__top {
+    .select__redirect {
+      width: 250px;
+    }
+  }
+  .video__box {
+    flex: 0 50%;
+  }
   .tabulka-page {
     .main__content {
       padding: 0 20px;
@@ -323,6 +337,35 @@
   .zapas {
     width: 100%;
     max-width: 100%;
+  }
+  #botr_fzrQeqcU_AuJ7dosR_div .jw-display-icon-container .jw-button-color {
+    width: 60px;
+    height: 60px;
+  }
+  .jw-breakpoint-2 .jw-display .jw-icon,
+  .jw-breakpoint-3 .jw-display .jw-icon,
+  .jw-breakpoint-2 .jw-display .jw-svg-icon,
+  .jw-breakpoint-3 .jw-display .jw-svg-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .tv-page__top {
+    flex-direction: column;
+    align-items: start;
+  }
+  .main-video h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .video__box {
+    flex: 100%;
+  }
+  .main-video,
+  .tv-page__top {
+    padding-right: 0;
+  }
+  .video__item {
+    padding: 0;
   }
 }
 
