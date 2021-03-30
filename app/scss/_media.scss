@@ -88,6 +88,11 @@
 
 //// media 1240px ----------------------------
 @media (max-width: 1240px) {
+  .main.shop {
+    .main__content {
+      max-width: 896px;
+    }
+  }
   .statistiky.main {
     .container {
       padding: 0 15px;
@@ -295,6 +300,15 @@
 
 //// media 800px ----------------------------
 @media (max-width: 800px) {
+  .shop__inner {
+    margin-left: -20px;
+  }
+  .shop__product {
+    padding-left: 20px;
+  }
+  .shop__box {
+    flex: 0 50%;
+  }
   .title-page {
     font-size: 40px;
     line-height: 50px;
@@ -507,6 +521,21 @@
 
 //// media 480px ----------------------------
 @media (max-width: 480px) {
+  .main.shop {
+    .aside {
+      padding: 0 15px;
+    }
+  }
+  .shop__product {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .shop__inner {
+    margin-left: 0;
+  }
+  .shop__box {
+    flex: 100%;
+  }
   .clanek__box img {
     height: 260px;
   }

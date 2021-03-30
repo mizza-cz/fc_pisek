@@ -41,12 +41,23 @@ h5,
 h6 {
   font-weight: 700;
 }
+button {
+  cursor: pointer;
+}
 p {
   font-size: 18px;
   line-height: 26px;
   font-family: 'Barlow', sans-serif;
   font-weight: 400;
   color: #121619;
+  margin-bottom: 32px;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 32px;
+  @include Barlow;
+  color: $black;
   margin-bottom: 32px;
 }
 
@@ -117,7 +128,8 @@ body {
   padding: 0 56px;
 }
 
-.title-page {
+.title-page,
+h1 {
   font-size: 48px;
   line-height: 56px;
   color: $black;
@@ -143,13 +155,6 @@ body {
   color: $black;
 }
 
-.text {
-  font-size: 18px;
-  line-height: 32px;
-  @include Barlow;
-  color: $black;
-  margin-bottom: 32px;
-}
 .pagination {
   margin-top: 30px;
   display: flex;
