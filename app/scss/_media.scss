@@ -263,6 +263,10 @@
   .top__item-box {
     display: flex;
     width: 100%;
+    &:hover {
+      max-width: 100%;
+      width: 100%;
+    }
   }
   .top__item.top__item--left {
     width: 100%;
