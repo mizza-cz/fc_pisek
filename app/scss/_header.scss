@@ -42,6 +42,10 @@
   right: 0;
   z-index: 999;
   top: -60px;
+  transition: all 0.4s;
+  &:hover {
+    transform: scale(1.1);
+  }
   img {
     display: block;
     width: 100%;

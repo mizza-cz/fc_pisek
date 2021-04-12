@@ -372,16 +372,30 @@
 }
 .top__item {
   max-width: 100%;
-  height: 480px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   position: relative;
   height: 350px;
   width: 100%;
-
+  transition: all 1s;
+  &:hover {
+    .top__title {
+      text-decoration: underline;
+    }
+  }
   &-box {
+    height: 100%;
     width: 40%;
+    transition: all 1s;
+    &:hover {
+      max-width: 50%;
+      width: 100%;
+      .top__item.top__item--left {
+        max-width: 50% !important;
+        width: 100%;
+      }
+    }
   }
 
   &::before {
@@ -398,8 +412,12 @@
   }
 }
 .top__item.top__item--left {
+  transition: all 1s;
   max-width: 60%;
   height: 700px;
+  &:hover {
+    max-width: 100%;
+  }
 }
 .top__content {
   display: flex;
@@ -424,6 +442,7 @@
   line-height: 48px;
   margin-top: 10px;
   margin-bottom: 35px;
+  color: #fff;
 }
 .datum {
   @include color;
