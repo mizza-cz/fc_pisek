@@ -36,7 +36,8 @@ $(function () {
   
 });
 
-
+var delay_popup = 3000;
+setTimeout("document.getElementById('overlay').style.display='block'", delay_popup);
 
 const counter = function () {
   const btns = document.querySelectorAll('.counter__btn');
